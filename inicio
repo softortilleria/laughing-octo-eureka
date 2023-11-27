@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="image-container">
+    <img src="../assets/logo_temp.png" alt="Tortilleria FER Logo">
+    <p>Tortilleria FER</p>
+    <h1>Iniciar Sesión</h1>
+  </div>
+
+  <div id="login-form">
+    <ion-item>
+      <ion-label position="stacked">Nombre de Usuario</ion-label>
+      <ion-input aria-label="user" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input aria-label="pass" type="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="success" routerLink="/catalogo">Iniciar sesión</ion-button>
+    <ion-button expand="block" color="success" routerLink="/registro">Registrarse</ion-button>
+    <ion-button expand="block" color="success" routerLink="/catalogo-ver">Continuar como invitado</ion-button>
+  </div>
+</ion-content>
+
+<style>
+  #image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #image-container img {
+    width: 50%; 
+    border-radius: 10px; 
+  }
+
+  #login-form {
+    margin-top: 20px;
+  }
+
+  ion-button {
+  --color: white;
+}
+
+</style>
